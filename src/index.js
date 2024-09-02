@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import August30 from './Component/August30';
-import September30 from './Component/September1';
+import September1 from './Component/September1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <September30/>
+    <September1/>
   </React.StrictMode>
 );
 
