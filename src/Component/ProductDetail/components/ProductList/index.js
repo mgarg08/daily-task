@@ -8,6 +8,7 @@ export default function ProductList() {
   const { loading, error, data: products } = useFetch(fetchAllProducts);
 
   if (loading) return <div>loading....</div>;
+  if(error) return <p>Product list not found</p>
 
   return (
     <div className="product-card">

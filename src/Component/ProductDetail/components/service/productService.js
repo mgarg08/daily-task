@@ -7,8 +7,6 @@ export const fetchAllProducts = async () => {
 };
 
 
-
-
 export const getSingleProduct = async (id) => {
   const response = await fetch(`https://fakestoreapi.com/products/${id}`);
 

@@ -13,6 +13,7 @@ export default function IndividualProductItem() {
   const {data:product,error,loading} = useFetch(()=>getSingleProduct(id));
 
    if(loading) return <div>Loading...</div>
+   if(error) return <div>Product not found</div>
 
   return (
     <div className="image-content-details">
