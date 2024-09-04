@@ -1,0 +1,112 @@
+.sign-up-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 33px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 511px;
+    position: relative;
+  }
+  
+  h2 {
+    position: relative;
+    text-align: center;
+    bottom: 17px;
+    color: #1d7ef9;
+    font-weight: bold;
+    margin-bottom: 26px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #6a11cb;
+    padding: 8px 0;
+    font-size: 16px;
+    background: transparent;
+    color: #333;
+  }
+  
+  .input-group input:focus ~label{
+    top: -15px;
+    
+  }
+  .input-group input:focus {
+    outline: none;
+    border-bottom: 2px solid #6a11cb;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 16px; 
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.2s ease all;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .checkbox-group input {
+    margin-right: 8px; 
+  }
+  .checkbox-group label{
+    color:#aaa;
+  }
+  
+  .create-account-btn {
+    display: block;
+    width: 68%;
+    padding: 12px;
+    margin-left: 51px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 38px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer; 
+    margin-top: 17px;
+  }
+  
+  .create-account-btn:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+  }
+  
+  .sign-in-link {
+    text-align: center;
+    font-size: 14.4px; 
+    color: #777;
+    margin-top: 26px;
+  }
+  
+  .sign-in-link a {
+    color: #1d7ef9;
+    text-decoration: none;
+  }
+  
+  .sign-in-link a:hover {
+    text-decoration: underline;
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
