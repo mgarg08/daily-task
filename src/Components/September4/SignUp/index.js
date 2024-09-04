@@ -14,13 +14,14 @@ function SignUp() {
     Password: "",
   };
 
-  const { values, errors, handleChange, handleSubmit } = useFormValidation(
+  const { values, errors, handleChange, handleSubmit, resetForm } = useFormValidation(
     initialState,
     validate
   );
 
   const submitForm = () => {
     console.log("Form submitted successfully", values);
+    resetForm(); 
   };
 
   return (
