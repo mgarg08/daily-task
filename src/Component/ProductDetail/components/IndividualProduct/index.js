@@ -6,15 +6,13 @@ import { getSingleProduct } from "../service/productService";
 
 export default function IndividualProductItem() {
 
-
-
-
   const { id } = useParams();
   const navigate = useNavigate();
 
 
-  const {data:product,error,loading} = useFetch(()=>getSingleProduct(id))
- 
+  const {data:product,error,loading} = useFetch(()=>getSingleProduct(id));
+
+   if(loading) return <div>Loading...</div>
 
   return (
     <div className="image-content-details">
